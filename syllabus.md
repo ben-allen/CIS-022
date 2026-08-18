@@ -9,7 +9,7 @@
 ## Crucial Details
 
 - **Classroom:** 503
-- **Credit hours:** 4
+- **Credit hours:** 3
 - **Meeting time:** 11:00 AM – 12:50 PM, Tuesdays and Thursdays
   > **Note:** This class follows the "Berkeley time" convention established at Cal — classes start 10 minutes after their listed time, with the ten minutes before used for informal question-answer. As such, lectures will start at **11:00 AM**.
 
