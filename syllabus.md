@@ -68,7 +68,7 @@ Upon completion of this class, students will be able to:
 
 ## Discord
 
-- [Invite link to the class Discord](https://discord.gg/TGukznhE)
+- [Invite link to the class Discord](https://discord.gg/8sYygjpJy)
 - **This link expires August 28th — join ASAP.**
 - **Please do not share this link with anyone not in the class.**
 
