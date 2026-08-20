@@ -4,7 +4,7 @@
 
     move()            turn_left() put_beeper()       pick_beeper() 
 
-    Actions Karel performs. Always end with a semicolon in your code, e.g. `move();`
+Actions Karel performs. Always end with a semicolon in your code, e.g. `move();`
 
 # Statements end with ; not with a new line
 
@@ -18,8 +18,9 @@ look organized on its own.
 
     front_is_clear()    front_is_blocked() left_is_clear()
     left_is_blocked() right_is_clear()    right_is_blocked() back_is_clear()
-    back_is_blocked() beepers_present()   no_beepers_present() These return
-    true or false. Use them inside `if`, `else if`, and `while`.
+    back_is_blocked() beepers_present()   no_beepers_present() 
+
+These return true or false. Use them inside `if`, `else if`, and `while`.
 
 ## while loops
 
