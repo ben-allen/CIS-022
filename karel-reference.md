@@ -2,8 +2,9 @@
 
 ## Basic commands
 
-    move()            turn_left() put_beeper()       pick_beeper() Actions
-    Karel performs. Always end with a semicolon in your code, e.g. `move();`
+    move()            turn_left() put_beeper()       pick_beeper() 
+
+    Actions Karel performs. Always end with a semicolon in your code, e.g. `move();`
 
 # Statements end with ; not with a new line
 
