@@ -47,16 +47,16 @@ anything by themselves. They only make sense inside an `if`, `else if`, or
 ## Problem 1 — Row Cleanup
 
 Karel starts at the west end of a single row of unknown length, facing east.
-Beepers are scattered on some corners along the row and not on others, in no
-particular pattern. Walk the row and pick up every beeper.
+Choose a world where beepers are scattered on some squares along the row and
+not on others, in no particular pattern. Walk the row and pick up every beeper.
 
 **Constraints**
 
 - You don't know the row's length in advance, and you don't know which
-  corners have beepers.
+  squares have beepers.
 - Karel should end at the east end of the row (the wall), not partway
   through.
-- A corner may have more than one beeper stacked on it — make sure you pick
+- A square may have more than one beeper stacked on it — make sure you pick
   up all of them before moving on, not just one.
 
 This is the warm-up: the point is a `while` loop that runs for an unknown
@@ -67,14 +67,14 @@ number of steps, driven entirely by what Karel senses underfoot and ahead
 
 ## Problem 2 — Checkerboard (One Specific World)
 
-Fill every other corner with a beeper, in a checkerboard pattern, starting
-with the corner Karel is on. This version only needs to work on the
+Fill every other square with a beeper, in a checkerboard pattern, starting
+with the square Karel is on. This version only needs to work on the
 8x8 world — you're allowed to write a solution that assumes a fixed width
 and height.
 
 **Constraints**
 
-- Every corner of one color gets exactly one beeper; every corner of the
+- Every square of one color gets exactly one beeper; every square of the
   other color gets none.
 - It's fine if this solution breaks on a different-sized world. That's
   coming in Problem 4.
@@ -90,10 +90,10 @@ beeper placed elsewhere in the maze. Write a program that finds it.
 
 - You may assume the maze is a **tree**. This is a computer science term
   meaning that there are no loops in the maze's walls, so there's exactly
-  one path between any two corners.
-- In other words: every corner in the maze is reachable from Karel's
-  starting corner by exactly one path — there are no loops to worry about,
-  so you'll never need to remember a corner you've already tried.
+  one path between any two square.
+- In other words: every square in the maze is reachable from Karel's
+  starting square by exactly one path — there are no loops to worry about,
+  so you'll never need to remember a square you've already tried.
 - Karel doesn't know which direction the beeper is in, or how far away it
   is. They only know what's immediately in front of, to the left of, and to
   the right at each step.
@@ -103,7 +103,7 @@ beeper placed elsewhere in the maze. Write a program that finds it.
 
 ## Problem 4 — Checkerboard (Any World)
 
-Same task as Problem 2 — fill alternating corners in a checkerboard pattern
+Same task as Problem 2 — fill alternating squares in a checkerboard pattern
 — but now your program has to work on **any rectangular world**, square or
 not, of any size, without modification.
 
@@ -114,7 +114,7 @@ not, of any size, without modification.
   direction. Width and height are independent of each other — a solution
   that only accounts for the parity of one of them will pass on a square
   world and then fail the moment the world isn't square.
-- Karel starts in a corner of the world, facing along one of the edges.
+- Karel starts in a square of the world, facing along one of the edges.
 - You do not know the width or height of the world in advance. Your
   program has to discover both by sensing walls, not by being told.
 
@@ -123,12 +123,12 @@ not, of any size, without modification.
 ## Problem 5 — Find the Midpoint
 
 Karel starts at the west end of a single row of unknown length, facing
-east. Place one beeper at the corner that is exactly in the middle of the
+east. Place one beeper at the square that is exactly in the middle of the
 row, and nowhere else.
 
 **Constraints**
 
-- Think about what happens when the row has an even number of corners, so
+- Think about what happens when the row has an even number of squares, so
   there is no single middle. Decide what your program should do in that
   case, and be consistent about it.
 - Any beepers you may place along the way to find the middle should not
@@ -148,20 +148,20 @@ row, and nowhere else.
 ## Problem 6 — Row Gather
 
 Karel starts at the west end of a single row of unknown length, facing
-east — same setup as Problem 1. Beepers are scattered on some corners
-along the row and not on others, in no particular pattern, and a corner
+east — same setup as Problem 1. Beepers are scattered on some squares 
+along the row and not on others, in no particular pattern, and a square 
 may have more than one stacked on it. This time, instead of picking every
-beeper up and stopping, gather all of them onto the bottom-left corner —
-the corner Karel starts on.
+beeper up and stopping, gather all of them onto the bottom-left square —
+the square Karel starts on.
 
 **Constraints**
 
 - You don't know the row's length in advance, and you don't know which
-  corners have beepers or how many.
+  squares have beepers or how many.
 - When Karel is done, every beeper that was anywhere on the row should be
-  on the bottom-left corner, and nowhere else.
+  on the bottom-left square, and nowhere else.
 - Your solution must also work correctly when the row is only one column
-  wide — a "row" with just a single corner, where Karel starts on the only
+  wide — a "row" with just a single square, where Karel starts on the only
   spot there is.
 
 ---
@@ -169,20 +169,20 @@ the corner Karel starts on.
 ## Problem 7 — World Cleanup (EXTRA CREDIT!!!!)
 
 Beepers are scattered arbitrarily across a rectangular world of unknown
-size — not just along one row, but on any corner in the grid. Gather every
-beeper in the world onto the single corner in the bottom-left.
+size — not just along one row, but on any square in the grid. Gather every
+beeper in the world onto the single square in the bottom-left.
 
 **Constraints**
 
 - You don't know the world's width or height, or how many beepers there
   are or where they are.
-- Karel needs a systematic way to visit every corner in the world — a
+- Karel needs a systematic way to visit every square in the world — a
   back-and-forth sweep, row by row, is the standard approach. Think
   carefully about what happens at the end of each row: Karel needs to move
   up one row and reverse direction, and that "turnaround" step is where
   most attempts at this problem go wrong.
 - When Karel is done, every beeper in the world should be on the
-  bottom-left corner, and nowhere else.
+  bottom-left square, and nowhere else.
 
 This one is meaningfully harder than the earlier problems — it's a genuine
 step up in difficulty, not just a longer version of Row Cleanup. Budget
