@@ -2,7 +2,7 @@
 
 ## Basic commands
 
-```cpp
+```
 move();
 turn_left();
 put_beeper();
@@ -21,7 +21,7 @@ look organized on its own.
 
 ## Basic conditionals
 
-```cpp
+```
 front_is_clear()      front_is_blocked()
 left_is_clear()       left_is_blocked()
 right_is_clear()      right_is_blocked()
@@ -33,7 +33,7 @@ These return true or false. Use them inside `if`, `else if`, and `while`.
 
 ## while loops
 
-```cpp
+```
 while (front_is_clear()) {
     move();
 }
@@ -45,7 +45,7 @@ the body never runs at all.
 
 ## if / else if / else
 
-```cpp
+```
 if (beepers_present()) {
     pick_beeper();
 } else if (front_is_clear()) {
@@ -62,7 +62,7 @@ only what the problem needs.
 
 ## && and || and !
 
-```cpp
+```
 if (front_is_clear() && !beepers_present()) {
     move();
 }
@@ -77,7 +77,7 @@ sitting on the current corner.
 
 ## When is the while condition checked?
 
-```cpp
+```
 while (front_is_clear()) {
     move();
     move();
@@ -93,7 +93,7 @@ whatever's inside the curly braces first.
 
 ## Defining new functions
 
-```cpp
+```
 void turn_right() {
     turn_left();
     turn_left();
