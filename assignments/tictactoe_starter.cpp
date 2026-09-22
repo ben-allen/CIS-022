@@ -40,7 +40,7 @@ char switchPlayer(char player);
 // ----- main (do not change) -----
 int main()
 {
-    char board[ROWS][COLUMNS];
+    char board[][COLUMNS];
     char player = 'X';
     char winner = ' ';
 
