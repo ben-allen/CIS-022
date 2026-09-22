@@ -27,14 +27,14 @@ const int ROWS = 3;
 const int COLUMNS = 3;
 
 // ----- Function prototypes (do not change) -----
-void initBoard(char board[ROWS][COLUMNS]);
-void printBoard(const char board[ROWS][COLUMNS]);
+void initBoard(char board[][COLUMNS]);
+void printBoard(const char board[][COLUMNS]);
 int  readInt();                                        // provided
-bool isValidMove(const char board[ROWS][COLUMNS], int cell);
-int  getMove(const char board[ROWS][COLUMNS], char player);
-void placeMark(char board[ROWS][COLUMNS], int cell, char player);
-char checkWinner(const char board[ROWS][COLUMNS]);
-bool isBoardFull(const char board[ROWS][COLUMNS]);
+bool isValidMove(const char board[][COLUMNS], int cell);
+int  getMove(const char board[][COLUMNS], char player);
+void placeMark(char board[][COLUMNS], int cell, char player);
+char checkWinner(const char board[][COLUMNS]);
+bool isBoardFull(const char board[][COLUMNS]);
 char switchPlayer(char player);
 
 // ----- main (do not change) -----
