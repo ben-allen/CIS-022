@@ -1,7 +1,5 @@
 # Assignment: Tic-Tac-Toe
 
-**Due:** [DATE]  
-**Estimated time:** 2–3 hours
 
 ## Overview
 
