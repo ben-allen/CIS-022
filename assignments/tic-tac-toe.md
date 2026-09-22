@@ -43,7 +43,7 @@ Players choose a cell by number:
  7 | 8 | 9
 ```
 
-Cell number `n` is stored at `board[(n - 1) / 3][(n - 1) % 3]`. Work through a few examples on paper to convince yourself this is right before you start coding.
+Cell number `n` is stored at `board[(n - 1) / 3][(n - 1) % 3]`. If you'd like, work through a few examples on paper to convince yourself this is right before you start coding.
 
 ## Functions to write
 
@@ -52,7 +52,7 @@ Cell number `n` is stored at `board[(n - 1) / 3][(n - 1) % 3]`. Work through a f
 | `init_board` | Sets every cell to `' '` |
 | `print_board` | Prints the board, showing `X`/`O` in filled cells and the cell number in empty cells |
 | `is_valid_move` | Returns `true` if the cell is 1–9 **and** empty |
-| `get_move` | Asks the player for a cell until they enter a valid one, then returns it. Tell them *why* a move was rejected. |
+| `get_move` | Asks the player for a cell until they enter a valid one, then returns it. Tell them *why* a move was rejected. Use the EXACT wording used in the sample run below. pro tip: define the string in a global constant|
 | `place_mark` | Puts the player's mark in the given cell |
 | `check_winner` | Checks all 8 winning lines. Returns `'X'`, `'O'`, or `' '` if no one has won |
 | `is_board_full` | Returns `true` if there are no empty cells |
@@ -64,7 +64,7 @@ See the comments in the starter file for more detail on each one.
 
 ## Sample run
 
-Your wording doesn't have to match exactly, but your program should behave like this:
+Your program should behave like this (PLEASE MATCH THE EXACT WORDING AND FORMATTING):
 
 ```
 Welcome to Tic-Tac-Toe!
@@ -115,22 +115,12 @@ Before submitting, make sure each of these works:
 
 ## Extra credit (optional)
 
-Submit extra credit in a **separate file** named `tictactoe_extra.cpp`. In that file only, you may modify `main()`. Your required submission must still use the original `main()`.
+Submit extra credit in a **separate file** named `tictactoe_extra.cpp`. In that file only, you may modify `main()`. Your required submission must still use the original `main()`. Note: I'm not going to be too picky with the wording and formatting of the extra credit components.
 
-- **Play again (+5):** After a game ends, ask whether the players want to play again, and keep a running score of X wins, O wins, and draws.
-- **Computer opponent (+5):** Let one player be the computer, which picks a random empty cell.
-- **Smarter computer (+5 more):** The computer takes a winning move if it has one, blocks the other player's winning move if it doesn't, and otherwise picks randomly.
-
-## Grading
-
-| Category | Points |
-|---|---|
-| Correctness: moves, wins (all 8 lines), and draws all work | 50 |
-| Input validation: out-of-range and taken cells handled with clear messages | 20 |
-| Follows the rules: unchanged prototypes and `main()`, no globals | 20 |
-| Readability: clear names, consistent indentation, comments where helpful | 10 |
-| **Total** | **100** |
+- **Play again (+3):** After a game ends, ask whether the players want to play again, and keep a running score of X wins, O wins, and draws.
+- **Computer opponent (+3):** Let one player be the computer, which picks a random empty cell.
+- **Smarter computer (+3 more):** The computer takes a winning move if it has one, blocks the other player's winning move if it doesn't, and otherwise picks randomly.
 
 ## Submission
 
-Submit `tictactoe.cpp` [and optionally `tictactoe_extra.cpp`] to [LOCATION] by [DATE].
+Submit `tictactoe.cpp` [and optionally `tictactoe_extra.cpp`].
