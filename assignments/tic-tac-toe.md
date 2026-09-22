@@ -18,14 +18,14 @@ Download `tictactoe_starter.cpp`. It contains:
 
 - **Function prototypes** for every function you'll write
 - **`main()`**, already written, which runs the game by calling your functions
-- **`read_int()`**, a helper that reads a number from the user and handles non-numeric input for you
+- **`readInt()`**, a helper that reads a number from the user and handles non-numeric input for you
 - **Empty function stubs** marked `TODO`, each with a comment describing exactly what it must do
 
 Your job is to fill in the `TODO` functions so the game works.
 
 ## Rules
 
-1. **Do not change any function prototype, `main()`, or `read_int()`.** Your functions must work with the code exactly as given. Submissions that don't compile with the original `main()` will lose significant points.
+1. **Do not change any function prototype, `main()`, or `readInt()`.** Your functions must work with the code exactly as given. Submissions that don't compile with the original `main()` will lose significant points.
 2. **No global variables.** The board lives in `main()` and gets passed to your functions.
 3. You may write additional helper functions if you want to, as long as the required ones work as described.
 
@@ -49,18 +49,18 @@ Cell number `n` is stored at `board[(n - 1) / 3][(n - 1) % 3]`. If you'd like, w
 
 | Function | What it does |
 |---|---|
-| `init_board` | Sets every cell to `' '` |
-| `print_board` | Prints the board, showing `X`/`O` in filled cells and the cell number in empty cells |
-| `is_valid_move` | Returns `true` if the cell is 1–9 **and** empty |
-| `get_move` | Asks the player for a cell until they enter a valid one, then returns it. Tell them *why* a move was rejected. Use the EXACT wording used in the sample run below. pro tip: define the string in a global constant|
-| `place_mark` | Puts the player's mark in the given cell |
-| `check_winner` | Checks all 8 winning lines. Returns `'X'`, `'O'`, or `' '` if no one has won |
-| `is_board_full` | Returns `true` if there are no empty cells |
-| `switch_player` | Returns `'O'` for `'X'` and `'X'` for `'O'` |
+| `initBoard` | Sets every cell to `' '` |
+| `printBoard` | Prints the board, showing `X`/`O` in filled cells and the cell number in empty cells |
+| `isValidMove` | Returns `true` if the cell is 1–9 **and** empty |
+| `getMove` | Asks the player for a cell until they enter a valid one, then returns it. Tell them *why* a move was rejected. Use the EXACT wording used in the sample run below. pro tip: define the string in a global constant|
+| `placeMark` | Puts the player's mark in the given cell |
+| `checkWinner` | Checks all 8 winning lines. Returns `'X'`, `'O'`, or `' '` if no one has won |
+| `isBoardFull` | Returns `true` if there are no empty cells |
+| `switchPlayer` | Returns `'O'` for `'X'` and `'X'` for `'O'` |
 
 See the comments in the starter file for more detail on each one.
 
-**Suggested order:** Start with `init_board`, `print_board`, and `switch_player`, and get the board displaying. Then do `is_valid_move`, `get_move`, and `place_mark` so you can play. Finish with `is_board_full` and `check_winner`. Compile and run after each function. Don't write everything at once.
+**Suggested order:** Start with `initBoard`, `printBoard`, and `switchPlayer`, and get the board displaying. Then do `isValidMove`, `getMove`, and `placeMark` so you can play. Finish with `isBoardFull` and `checkWinner`. Compile and run after each function. Don't write everything at once.
 
 ## Sample run
 
