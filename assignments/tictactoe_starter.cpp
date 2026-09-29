@@ -38,9 +38,8 @@ bool isBoardFull(const char board[][COLUMNS]);
 char switchPlayer(char player);
 
 // ----- main (do not change) -----
-int main()
-{
-    char board[][COLUMNS];
+int main() {
+    char board[ROWS][COLUMNS];
     char player = 'X';
     char winner = ' ';
 
@@ -68,8 +67,7 @@ int main()
 // ----- Provided helper (do not change) -----
 // Reads an integer from the user. If they type something that
 // isn't a number, it clears the error and asks again.
-int readInt()
-{
+int readInt() {
     int value;
     while (!(cin >> value))
     {
@@ -90,8 +88,7 @@ int readInt()
 // =============================================================
 
 // Set every cell of the board to ' ' (empty).
-void initBoard(char board[][COLUMNS])
-{
+void initBoard(char board[][COLUMNS]) {
     // TODO
 }
 
@@ -104,15 +101,13 @@ void initBoard(char board[][COLUMNS])
 //       4 | O | 6
 //      ---+---+---
 //       7 | 8 | X
-void printBoard(const char board[][COLUMNS])
-{
+void printBoard(const char board[][COLUMNS]) {
     // TODO
 }
 
 // Return true if cell is between 1 and 9 AND that cell is empty.
 // Otherwise return false.
-bool isValidMove(const char board[][COLUMNS], int cell)
-{
+bool isValidMove(const char board[][COLUMNS], int cell) {
     // TODO
     return false;
 }
