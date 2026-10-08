@@ -4,6 +4,8 @@
 
 Today you'll model a traffic light with an `enum`, then model a whole intersection with a `struct`.
 
+<a href="stoplight_starter.cpp" download>Download the starter code</a>
+
 Open the starter file, `stoplight_starter.cpp`. It has a function for every task below, each with a `TODO` comment and a placeholder body. **Don't change `main()`.** Once your functions are right, the program prints exactly what's shown under Expected output.
 
 The starter won't compile until you've finished the first step of Part 1. That's expected: `main()` uses the `LightColor` type, and you haven't written it yet.
