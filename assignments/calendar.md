@@ -78,12 +78,14 @@ The number of days in a month is where this project gets interesting:
 2. Otherwise, a year divisible by 100 is *not* a leap year (1900 wasn't).
 3. Otherwise, a year divisible by 4 is a leap year (2028 will be).
 
-Write these as two private helper functions, `isLeapYear()` and `daysInMonth()`. You'll use them again in Part 3, and nobody outside the class needs to call them.
+Write these as two private helper functions, `isLeapYear()` and `daysInMonth()`. Why are they private? They're private because code outside the class has no reason to call them.
+
+You'll use these functions again in Part 3. 
 
 **What should happen with a bad date?** That's your decision. Pick one of these and write a comment above your constructor saying which you chose and why:
 
 - Print an error message and end the program with `exit(1)`. You'll need `#include <cstdlib>`.
-    - `exit` is not the standard way in modern C++ to handle this. The standard way is to use "exceptions", which we won't get to until much later in the semester
+    - Note: `exit` is not the standard way in modern C++ to handle this. The standard way is to use "exceptions", which we won't get to until much later in the semester
 - Print an error message and use a fixed fallback date instead.
 - Quietly fix the date, such as changing February 30 to February 28. This is called "clamping" the date.
 
@@ -113,7 +115,7 @@ Write `printUS()`, `printISO()`, `printLong()` and `printJapanese()`. Just like 
 | `printLong()` | `March 7, 2026` | full month name, no padding on the day |
 | `printJapanese()` | `Reiwa 8, March 7` | era and year within the era, then the month name and day (see below) |
 
-Why have more than one? Most of the world would read `3/7/2026` as July 3. The ISO format (from the international standard ISO 8601) puts the biggest unit first, so nobody can misread it. As a bonus, ISO dates sort correctly as plain text.
+Why have more than one? Most of the world would read `3/7/2026` as July 3. The ISO format (from the international standard ISO 8601) puts the biggest unit first, so nobody can misread it. As a bonus, ISO dates sort correctly as plain text. The Japanese calendar is included to show how what looks like a relatively straightforward problem &mdash; "how do we represent a calendar date" &mdash; can actually be very complicated to solve. It is very common for software used globally to have to be able to correctly handle many different non-Gregorian calendars, and most useful software ends up being used globally.
 
 Each function prints its date followed by `endl`.
 
@@ -314,7 +316,7 @@ February 2026 is a good test case. It starts on a Sunday and ends on a Saturday,
 
 ## Part 5: Test the edges
 
-Write your own `main()` that tests your class. Remember the midnight and noon bugs in `print12()`: bugs hide at the edges, so that's where your tests go.
+Write your own `main()` that tests your class. Remember the midnight and noon bugs in `print12()`: bugs hide at the edge cases, so that's what your tests should cover.
 
 For each test, write the output you expect in a comment *before* you run it. If the real output doesn't match, either your code or your expectation is wrong. Figure out which, and fix it.
 
@@ -347,7 +349,7 @@ Its rules are surprisingly regular:
 
 - There are 13 months. The first 12 always have exactly 30 days.
 - The 13th month, Pagume, has 5 days, or 6 in a leap year. That 6th day is an *intercalary* day: a day inserted to keep the calendar in step with the seasons, like February 29.
-- A year is a leap year when `year % 4 == 3`. There are no exceptions for centuries.
+- A year is a leap year when `year % 4 == 3`.
 
 | # | Month | # | Month |
 | --- | --- | --- | --- |
