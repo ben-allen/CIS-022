@@ -50,13 +50,6 @@
       <h1 class="site-title"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %}
 
-      {% if page.name == "README.md" %}
-
-      <div class="canvas-only" role="note" aria-labelledby="canvas-note-title">
-        <p id="canvas-note-title" class="canvas-only-title">Canvas course navigation</p>
-        <p>You're viewing this inside Canvas. Assignments, slides, and videos are organized week by week under <a href="PASTE-CIS-022-MODULES-URL-HERE" target="_top"><strong>Modules</strong></a> in the course menu, which is likely the easiest way for you to access course materials.</p>
-      </div>
-      {% endif %}
 
       {{ content }}
 
