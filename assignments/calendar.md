@@ -51,7 +51,7 @@ private:
 Notice what's missing:
 
 - **There is no `Date()` with no arguments.** `Date d;` won't compile. Every `Date` has to be created with a month, day and year, so there's never a moment when a `Date` exists without a real date in it.
-- **There are no setters.** Once a `Date` is created, the only way to change it is `incrementDay()`. That means once your constructor has checked a date, nothing can turn it into a bad one later. Terminology: objects of a class without mutators are referred to as "immutable". There are good reasons for objects to be immutable whenever possible.
+- **There are no setters.** Once a `Date` is created, the only way to change it is `incrementDay()`. That means once your constructor has checked a date, nothing can turn it into a bad one later. 
 - **There is no `incrementMonth()` or `incrementYear()` in the public section.** You'll probably want them, but as private helpers (see Part 3).
 
 ## Part 1: The constructor and validation
