@@ -28,6 +28,7 @@ This is **not** a first programming class: some prior experience with C++, Java,
 | 8 | Day 12 | Array review, enums, structs, and your first class | [Day 12](slides/cis022_day_12_classes.pdf) |
 | 9 | Week 8 | Building a clock, part 1: designing a class | [Clock, part 1](slides/cis022%20week%208%20clock%20pt%201.pdf) |
 | 10 | Week 9 | Building a clock, part 2: `private`, accessors, constructors, and `this` | [Clock, part 2](slides/cis022%20week%209%20clock%20pt%202.pdf) |
+| 11 | Weeks 9–10 | Pointers, part 1: addresses, `new` and `delete`, and what `this` really is | [Pointers, part 1](slides/cis022%20week%209-10%20pointers%20pt%201.pdf) |
 
 New slides are added here as the semester goes on.
 
