@@ -29,6 +29,7 @@ This is **not** a first programming class: some prior experience with C++, Java,
 | 9 | Week 8 | Building a clock, part 1: designing a class | [Clock, part 1](slides/cis022%20week%208%20clock%20pt%201.pdf) |
 | 10 | Week 9 | Building a clock, part 2: `private`, accessors, constructors, and `this` | [Clock, part 2](slides/cis022%20week%209%20clock%20pt%202.pdf) |
 | 11 | Weeks 9–10 | Pointers, part 1: addresses, `new` and `delete`, and what `this` really is | [Pointers, part 1](slides/cis022%20week%209-10%20pointers%20pt%201.pdf) |
+| 12 | Weeks 12–13 | Turing machines: what they are, using the simulator, and puzzles | [Turing machines](slides/turing-machines-cis022.pdf) |
 
 New slides are added here as the semester goes on.
 
@@ -36,6 +37,7 @@ New slides are added here as the semester goes on.
 
 - [Assignments](https://github.com/ben-allen/CIS-022/tree/main/assignments) and [starter code](https://github.com/ben-allen/CIS-022/tree/main/starter-code)
 - [Karel the Robot (online exercise)](https://ben-allen.github.io/CIS-022/karel-cpp.html), used during the first few weeks of class, plus the [Karel reference sheet](karel-reference.md)
+- [Turing machine simulator](https://ben-allen.github.io/CIS-022/tools/turing-machine.html), used in class for the Turing machines sessions (instructions are in the [Turing machines slides](slides/turing-machines-cis022.pdf))
 - [C++ style guide](cpp_style_guide.pdf)
 - [Sample files](https://github.com/ben-allen/CIS-022/tree/main/sample-files) used in class exercises
 - Recommended text: *Starting Out with C++: from Control Structures to Objects*, Tony Gaddis. Please don't spend a lot of money on it; see the [syllabus](syllabus.md#recommended-text).
